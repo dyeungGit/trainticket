@@ -1,0 +1,54 @@
+spring:
+  datasource:
+    master:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/test1?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678
+    slave:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/test1?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678
+    order:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/t_train_order?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678
+    seat-1:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/t_train_seat_1?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678
+    seat-2:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url:
+        jdbc:mysql://localhost:3306/t_train_seat_2?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678
+    seat-3:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url:
+        jdbc:mysql://localhost:3306/t_train_seat_3?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678
+    seat-4:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url:
+        jdbc:mysql://localhost:3306/t_train_seat_4?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678
+    seat-5:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url:
+        jdbc:mysql://localhost:3306/t_train_seat_5?characterEncoding=UTF-8&useSSL=false&useUnicode=true&connectTimeout=1000&socketTimeout=60000&allowMultiQueries=true
+      username: sa
+      password: 12345678

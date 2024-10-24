@@ -1,5 +1,6 @@
 package train.common.dao;
 
+import java.util.List;
 import train.common.model.TrainNumberDetail;
 
 public interface TrainNumberDetailMapper {
@@ -14,4 +15,6 @@ public interface TrainNumberDetailMapper {
   int updateByPrimaryKeySelective(TrainNumberDetail record);
 
   int updateByPrimaryKey(TrainNumberDetail record);
+
+  List<TrainNumberDetail> getAll();
 }

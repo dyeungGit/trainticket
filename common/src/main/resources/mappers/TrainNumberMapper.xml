@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="train.common.model.TrainNumberMapper">
+<mapper namespace="train.common.dao.TrainNumberMapper">
     <resultMap id="BaseResultMap" type="train.common.model.TrainNumber">
         <id column="id" property="id" jdbcType="INTEGER"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
@@ -23,6 +23,11 @@
         from train_number
         where id = #{id,jdbcType=INTEGER}
     </select>
+    <select id="getAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from train_number
+    </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
         delete
         from train_number
@@ -30,11 +35,11 @@
     </delete>
     <insert id="insert" parameterType="train.common.model.TrainNumber">
         insert into train_number (id, name, from_station_id,
-        from_city_id, to_station_id, to_city_id,
-        train_type, type, seat_num)
+                                  from_city_id, to_station_id, to_city_id,
+                                  train_type, type, seat_num)
         values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{fromStationId,jdbcType=INTEGER},
-        #{fromCityId,jdbcType=INTEGER}, #{toStationId,jdbcType=INTEGER}, #{toCityId,jdbcType=INTEGER},
-        #{trainType,jdbcType=VARCHAR}, #{type,jdbcType=SMALLINT}, #{seatNum,jdbcType=INTEGER})
+                #{fromCityId,jdbcType=INTEGER}, #{toStationId,jdbcType=INTEGER}, #{toCityId,jdbcType=INTEGER},
+                #{trainType,jdbcType=VARCHAR}, #{type,jdbcType=SMALLINT}, #{seatNum,jdbcType=INTEGER})
     </insert>
     <insert id="insertSelective" parameterType="train.common.model.TrainNumber">
         insert into train_number
@@ -129,14 +134,14 @@
     </update>
     <update id="updateByPrimaryKey" parameterType="train.common.model.TrainNumber">
         update train_number
-        set name = #{name,jdbcType=VARCHAR},
-        from_station_id = #{fromStationId,jdbcType=INTEGER},
-        from_city_id = #{fromCityId,jdbcType=INTEGER},
-        to_station_id = #{toStationId,jdbcType=INTEGER},
-        to_city_id = #{toCityId,jdbcType=INTEGER},
-        train_type = #{trainType,jdbcType=VARCHAR},
-        type = #{type,jdbcType=SMALLINT},
-        seat_num = #{seatNum,jdbcType=INTEGER}
+        set name            = #{name,jdbcType=VARCHAR},
+            from_station_id = #{fromStationId,jdbcType=INTEGER},
+            from_city_id    = #{fromCityId,jdbcType=INTEGER},
+            to_station_id   = #{toStationId,jdbcType=INTEGER},
+            to_city_id      = #{toCityId,jdbcType=INTEGER},
+            train_type      = #{trainType,jdbcType=VARCHAR},
+            type            = #{type,jdbcType=SMALLINT},
+            seat_num        = #{seatNum,jdbcType=INTEGER}
         where id = #{id,jdbcType=INTEGER}
     </update>
 </mapper>

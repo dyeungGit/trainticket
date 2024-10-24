@@ -19,7 +19,7 @@
             <a href="/admin/page.do" class="navbar-brand">
                 <small>
                     <i class="fa fa-leaf"></i>
-                    12306管理员控制台
+                    Control Panel
                 </small>
             </a>
         </div>
@@ -36,19 +36,19 @@
                     <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
                         <li>
                             <a href="#"> <i class="ace-icon fa fa-cog"></i>
-                                设置
+                                Configuration
                             </a>
                         </li>
                         <li>
                             <a href="profile.html"> <i class="ace-icon fa fa-user"></i>
-                                个人资料
+                                Personal Information
                             </a>
                         </li>
 
                         <li class="divider"></li>
                         <li>
                             <a href="/logout.page"> <i class="ace-icon fa fa-power-off"></i>
-                                注销
+                                Logout
                             </a>
                         </li>
                     </ul>
@@ -81,7 +81,7 @@
             <li class="active">
                 <a class="popstyle" href="/welcome.page" target="_blank">
                     <i class="menu-icon fa fa-tachometer"></i>
-                    <span class="menu-text"> 首页 </span>
+                    <span class="menu-text"> Home </span>
                 </a>
                 <b class="arrow"></b>
             </li>
@@ -89,7 +89,7 @@
             <li class="">
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-desktop"></i>
-                    <span class="menu-text"> 资源管理 </span>
+                    <span class="menu-text"> Resource Management </span>
                     <b class="arrow fa fa-angle-down"></b>
                 </a>
 
@@ -99,49 +99,49 @@
                     <li class="">
                         <a class="popstyle" href="/admin/train/city/list.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            城市管理
+                            Country Management
                         </a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
                         <a class="popstyle" href="/admin/train/station/list.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            站点管理
+                            Station Management
                         </a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
                         <a class="popstyle" href="/admin/train/number/list.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            车次管理
+                            Train Number Management
                         </a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
                         <a class="popstyle" href="/admin/train/numberDetail/list.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            车次详情管理
+                            Train Details Management
                         </a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
                         <a class="popstyle" href="/admin/train/seat/list.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            座位查询及管理
+                            Seat Search and Management
                         </a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
                         <a class="popstyle" href="/admin/train/user/list.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            12306用户管理
+                            User Management
                         </a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
                         <a class="popstyle" href="/admin/train/traveller/list.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            常用旅客管理
+                            Regular Passenger Management
                         </a>
                         <b class="arrow"></b>
                     </li>
@@ -233,16 +233,16 @@
         $(".popstyle").click(function () {
             var $this = $(this)
             $("iframe").attr(
-                    'src',
-                    $this.attr("data")
+                'src',
+                $this.attr("data")
             );
         });
 
         $(".direct").click(function () {
             var $this = $(this)
             $("iframe").attr(
-                    'src',
-                    $this.attr("data-value")
+                'src',
+                $this.attr("data-value")
             );
         });
     });

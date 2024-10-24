@@ -16,31 +16,31 @@
                 <div class="error-container">
                     <div class="well">
                         <h1 class="grey lighter smaller">
-                            <span class="blue bigger-125">
-                                <i class="ace-icon fa fa-random"></i>
-                                500
-                            </span>
-                            服务器内部错误
+                           <span class="blue bigger-125">
+                               <i class="ace-icon fa fa-random"></i>
+                               500
+                           </span>
+                            Internal Server Error
                         </h1>
 
                         <hr>
                         <h3 class="lighter smaller">
-                            我们正在修复它
+                            We're working on fixing it
                             <i class="ace-icon fa fa-wrench icon-animated-wrench bigger-125"></i>
                         </h3>
 
                         <div class="space"></div>
                         <div>
-                            <h4 class="lighter smaller">与此同时, 可以尝试以下:</h4>
+                            <h4 class="lighter smaller">Meanwhile, try one of the following:</h4>
                             <ul class="list-unstyled spaced inline bigger-110 margin-15">
                                 <li>
                                     <i class="ace-icon fa fa-hand-o-right blue"></i>
-                                    阅读FAQ
+                                    Read the FAQ
                                 </li>
 
                                 <li>
                                     <i class="ace-icon fa fa-hand-o-right blue"></i>
-                                    联系管理员,说明问题
+                                    Contact administrator to explain the issue
                                 </li>
                             </ul>
                         </div>
@@ -51,7 +51,7 @@
                         <div class="center">
                             <a href="javascript:history.back()" class="btn btn-grey">
                                 <i class="ace-icon fa fa-arrow-left"></i>
-                                上一页
+                                Previous Page
                             </a>
 
                             <a href="#" class="btn btn-primary">
